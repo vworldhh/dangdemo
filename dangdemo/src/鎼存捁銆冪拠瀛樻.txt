@@ -1,0 +1,60 @@
+数据库表
+	t_user表：用户表
+		id,
+		email
+		nickname：昵称
+		pwd
+		update_time datetime:更新日期
+	t_book表：书表
+		id
+		name：书名
+		category:目录
+		image:varchar 图片  //2.jpg
+		author：作者
+        recommend  推荐Y?N
+		publishing：出版社
+		brief:简介
+		publish_time：出版日期 
+		fixed_price:原价
+		dang_price:当当价
+		type (国外小说)国内小说/编程
+		score:顾客评分
+		sale_quantity 数量
+		update_time 更新时间//获得当前时间Date类专门获取当前时间
+	t_category表:目录表
+		 
+	t_order表：订单表
+	     id
+	     order_number 订单号
+	     Total_money 总价
+	t_address表：地址表
+           id
+           name 
+           address
+           email
+           phone_all
+           phonenumber
+           
+     T_Type
+          id 
+          self_number
+          T_name 
+          parent
+	1 小说 0
+	2 编程 0
+	3 国内 1
+	4 国外 1
+	5 java 2
+
+小说
+	国内
+		床边的小豆豆			100 99
+	国外
+		童年在人间我的大学		90 89
+		海水观赏鱼			80 79
+		小妇人				70 69
+		双螺旋				60 59
+		jane eyre			50 49
+编程
+	java
+		java就业培训教程		40 39	
